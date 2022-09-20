@@ -583,14 +583,10 @@ li:hover {
 }
 /************************* RESPONSIVE *************************/
 
-/*@media only screen and (min-width: 992px) {
+/*@media only screen and (max-width: 992px) {
   .filtres {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
- @media (max-width: 992px) toto {
-    
-    }
-} */
