@@ -410,10 +410,10 @@ h1 {
 
 #activités .activites {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
   height: 600px;
   min-height: 600px;
-  justify-content: space-between;
 }
 
 .conteneurImg {
@@ -434,10 +434,12 @@ h1 {
   transition: 0.9s;
 }
 
-.large {
+.conteneurLarge {
   width: 23%;
   min-width: 23%;
   height: 100%;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .smallMedium {
@@ -479,20 +481,77 @@ h1 {
   font-size: small;
 }
 
+@media screen and (max-width: 768px) {
+  #activités {
+    margin: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #activités .activites {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .conteneurLarge,
+  .smallMedium {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .conteneurLarge {
+    overflow: unset;
+    border-radius: 25px;
+  }
+
+  .large {
+    height: 220px;
+    width: 100%;
+  }
+
+  .medium,
+  .small {
+    height: 220px;
+    gap: 20px;
+    position: relative;
+  }
+
+  .contentTitre {
+    padding: 10px 0 10px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    font-size: small;
+  }
+}
+
 /************************* pied de page *************************/
 
 footer {
   margin-top: 60px;
   background-color: #f2f2f2;
-  display: flex;
-  justify-content: space-between;
 }
 
 .listes {
-  padding: 30px;
+  padding: 30px 50px;
   display: flex;
-  gap: 30px;
-  margin-left: 20px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.aPropos,
+.nosHebergements,
+.assistance {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 30%;
 }
 
 .titreFooter {
@@ -508,6 +567,20 @@ li:hover {
   color: #0065fc;
 }
 
+@media screen and (max-width: 768px) {
+  .listes {
+    padding: 30px 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .aPropos,
+  .nosHebergements,
+  .assistance {
+    width: 100%;
+  }
+}
 /************************* RESPONSIVE *************************/
 
 /*@media only screen and (min-width: 992px) {
