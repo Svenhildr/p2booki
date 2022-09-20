@@ -47,6 +47,37 @@ header #logo {
 }
 
 /************************* responsive en tête *************************/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header #logo {
+    text-align: center;
+    padding-left: 10;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .liensNav {
+    flex: 2;
+    border-top: 3.5px solid transparent;
+    border-bottom: 3.5px solid #f2f2f2;
+    padding: 10px 40px;
+  }
+
+  .liensNav:hover {
+    border-top: 3.5px solid transparent;
+    border-bottom: 3.5px solid #0065fc;
+  }
+}
+
+/* MQmobile */
 
 @media screen and (max-width: 768px) {
   header {
@@ -92,6 +123,54 @@ h1 {
   font-weight: 200;
   padding-bottom: 15px;
 }
+
+header {
+  display: block;
+  text-align: center;
+}
+
+header #logo {
+  text-align: center;
+  padding-left: 10;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.liensNav {
+  flex: 2;
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid #f2f2f2;
+  padding: 10px 40px;
+}
+
+.liensNav:hover {
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid #0065fc;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #recherche {
+    margin: 0 30px;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+  #recherche p {
+    font-size: large;
+  }
+  .enTete {
+    padding: 10px 0px 0px 0px;
+    font-size: small;
+    margin-bottom: 10px;
+  }
+}
+
+/* MQmobile */
 
 @media screen and (max-width: 768px) {
   #recherche {
@@ -144,6 +223,8 @@ h1 {
 .searchButton i {
   display: none;
 }
+
+/* MQmobile */
 
 @media screen and (max-width: 768px) {
   .searchForm {
@@ -254,7 +335,7 @@ h1 {
 
 .marseille h2,
 .populaire h2 {
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 .marseille,
@@ -323,6 +404,41 @@ h1 {
   transition: 0.9s;
 }
 
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #hebergement {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .populaire {
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+  }
+  .marseille {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaire .containerCard.card {
+    width: 100%;
+    gap: 10;
+  }
+
+  .marseille .containerCard .card {
+    width: 45%;
+  }
+}
+
+/* MQmobile */
+
 @media screen and (max-width: 768px) {
   #hebergement {
     margin: 0;
@@ -347,6 +463,7 @@ h1 {
     width: 100%;
     padding: 15px;
   }
+
   .marseille .containerCard .card,
   .populaire .containerCard.card {
     width: 100%;
@@ -461,7 +578,7 @@ h1 {
   height: 37%;
 }
 
-.large,
+.conteneurLarge,
 .medium,
 .small {
   border-radius: 25px;
@@ -480,6 +597,59 @@ h1 {
   background-color: white;
   font-size: small;
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #activités {
+    margin: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #activités .activites {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .conteneurLarge,
+  .smallMedium {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .conteneurLarge {
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  .large {
+    height: 220px;
+    width: 100%;
+  }
+
+  .medium,
+  .small {
+    height: 220px;
+    gap: 20px;
+    position: relative;
+  }
+
+  .contentTitre {
+    padding: 10px 0 10px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    font-size: small;
+  }
+}
+
+/* MQmobile */
 
 @media screen and (max-width: 768px) {
   #activités {
@@ -583,14 +753,10 @@ li:hover {
 }
 /************************* RESPONSIVE *************************/
 
-/*@media only screen and (min-width: 992px) {
+/*@media only screen and (max-width: 992px) {
   .filtres {
     display: flex;
     flex-wrap: wrap;
   }
-}
-
- @media (max-width: 992px) {
-    
-    }
-} */
+}   
+*/
