@@ -15,6 +15,11 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -43,7 +48,7 @@ header #logo {
 
 .liensNav:hover {
   color: #0065fc;
-  border-top: 4px solid #0065fc;
+  border-top: 3.5px solid #0065fc;
 }
 
 @media screen and (max-width: 991.98px) {
