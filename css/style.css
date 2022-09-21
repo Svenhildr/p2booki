@@ -54,7 +54,9 @@ header #logo {
 
   header #logo {
     text-align: center;
-    padding-left: 10px;
+    padding-left: 30px;
+    height: 70px;
+    width: 190px;
   }
 
   header nav {
@@ -86,7 +88,9 @@ header #logo {
 
   header #logo {
     text-align: center;
-    padding-left: 10px;
+    padding-left: 30px;
+    height: 70px;
+    width: 190px;
   }
 
   header nav {
@@ -125,7 +129,7 @@ h1 {
   padding-bottom: 15px;
 }
 
-/* @media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
   #recherche {
     margin: 0 30px;
   }
@@ -141,11 +145,11 @@ h1 {
     font-size: small;
     margin-bottom: 10px;
   }
-} */
+}
 
 /* MQmobile */
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #recherche {
     margin: 0 30px;
   }
@@ -157,7 +161,7 @@ h1 {
     padding: 10px 0px 0px 0px;
     font-size: small;
   }
-} */
+}
 
 /************************* barre de recherches *************************/
 
@@ -236,7 +240,7 @@ h1 {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
   border-radius: 70px;
   border: 2px solid #deebff;
   border-top: 2px solid #f2f2f2;
