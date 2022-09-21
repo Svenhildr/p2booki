@@ -43,7 +43,7 @@ header #logo {
 .liensNav {
   padding: 40px 40px;
   font-weight: 500;
-  border-top: 3.5px solid transparent;
+  border-top: 3.5px solid transparent;+
 }
 
 .liensNav:hover {
@@ -259,7 +259,8 @@ h1 {
   border: none;
   background-color: #deebff;
   transform: scale(1.125);
-  transition: 0.4s;
+  transition: 0.9s;
+  border : solid 2px transparent;
 }
 
 .titreFiltres {
