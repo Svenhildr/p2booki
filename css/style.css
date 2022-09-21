@@ -729,15 +729,3 @@ li:hover {
   }
 }
 /************************* RESPONSIVE *************************/
-
-/* application du style pour écrans de 768px à 992px */
-
-/* application du style pour écrans inférieurs à 768px */
-
-/*@media only screen and (max-width: 992px) {
-  .filtres {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}   
-*/
