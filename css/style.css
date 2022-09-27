@@ -6,9 +6,8 @@ body {
 #recherche,
 #hebergement,
 #activités {
-  margin: 0px 50px;
+  margin: 0px 15px;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +36,8 @@ header {
 header #logo {
   height: 65px;
   width: 180px;
-  padding: 10px 0 0 70px;
+  padding: 10px 0 0 40px;
+  margin-left: 50px;
 }
 
 .liensNav {
@@ -191,7 +191,7 @@ h1 {
 
 .marseille h2,
 .populaire h2 {
-  padding: 20px 20px;
+  padding: 20px 5px 20px 8px;
 }
 
 .marseille,
@@ -199,17 +199,17 @@ h1 {
   background-color: #f2f2f2;
   border-radius: 25px;
   gap: 16px;
-  padding: 30px;
+  padding: 25px 35px;
 }
 
 .marseille {
-  width: 100%;
+  width: 70%;
 }
 
 .marseille .containerCard {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   gap: 30px;
 }
@@ -218,7 +218,7 @@ h1 {
   width: 30%;
   background-color: white;
   border-radius: 25px;
-  border: 7px solid white;
+  border: 5px solid white;
   overflow: hidden;
 }
 
@@ -227,23 +227,26 @@ h1 {
   object-fit: cover;
   height: 140px;
 }
+
 .marseille .content {
-  padding: 5px 0 10px 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .note {
-  display: block;
   color: #0065fc;
+  padding-top: 10px;
 }
 
 .grey {
   color: #f2f2f2;
 }
 
-.afficher {
-  padding: 30px 0 0 10px;
+.marseille > .afficher {
+  display: flex;
+  padding: 35px 0 20px 5px;
 }
 
 .afficher:hover {
@@ -263,7 +266,7 @@ h1 {
 /************************* Les plus populaires *************************/
 
 .populaire {
-  width: auto;
+  width: 30%;
 }
 
 .populaire .etoilePop {
@@ -288,7 +291,7 @@ h1 {
   width: 100%;
   background-color: white;
   border-radius: 25px;
-  border: 7px solid white;
+  border: 5px solid white;
   overflow: hidden;
   display: flex;
   height: 160px;
@@ -424,6 +427,8 @@ li:hover {
 
 /************************* RESPONSIVE *************************/
 
+/* en tête */
+
 @media screen and (max-width: 768px) {
   header {
     display: block;
@@ -455,6 +460,8 @@ li:hover {
     border-bottom: 3.5px solid #0065fc;
   }
 
+  /* titres en tête */
+
   #recherche {
     margin: 0 30px;
   }
@@ -466,6 +473,8 @@ li:hover {
     padding: 10px 0px 0px 0px;
     font-size: small;
   }
+
+  /* barre de recherches */
 
   .searchForm {
     margin: 0px;
@@ -488,9 +497,13 @@ li:hover {
     display: flex;
   }
 
+  /* filtres */
+
   .titreFiltres {
     padding-right: 70px;
   }
+
+  /* hébergements */
 
   #hebergement {
     margin: 0;
@@ -521,6 +534,8 @@ li:hover {
     width: 100%;
     gap: 20px;
   }
+
+  /* activités */
 
   #activités {
     margin: 0;
@@ -571,6 +586,8 @@ li:hover {
     font-size: small;
   }
 
+  /* footer */
+
   .listes {
     padding: 30px 30px;
     gap: 25px;
@@ -586,6 +603,8 @@ li:hover {
 }
 
 /* MQ tablette */
+
+/* en tête */
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   header {
@@ -618,6 +637,8 @@ li:hover {
     border-bottom: 3.5px solid #0065fc;
   }
 
+  /* titres en tête */
+
   #recherche {
     margin: 0 30px;
   }
@@ -625,6 +646,7 @@ li:hover {
   h1 {
     font-size: x-large;
   }
+
   #recherche p {
     font-size: large;
   }
@@ -633,6 +655,8 @@ li:hover {
     font-size: small;
     margin-bottom: 10px;
   }
+
+  /* hébergements */
 
   #hebergement {
     margin: 0;
@@ -664,6 +688,8 @@ li:hover {
   .marseille .containerCard .card {
     width: 45%;
   }
+
+  /* activités */
 
   #activités {
     margin: 0;
