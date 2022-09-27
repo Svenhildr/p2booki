@@ -637,6 +637,8 @@ li:hover {
     border-bottom: 3.5px solid #0065fc;
   }
 
+  /* titres en tête */
+
   #recherche {
     margin: 0 30px;
   }
@@ -644,6 +646,7 @@ li:hover {
   h1 {
     font-size: x-large;
   }
+
   #recherche p {
     font-size: large;
   }
@@ -652,6 +655,8 @@ li:hover {
     font-size: small;
     margin-bottom: 10px;
   }
+
+  /* hébergements */
 
   #hebergement {
     margin: 0;
@@ -683,6 +688,8 @@ li:hover {
   .marseille .containerCard .card {
     width: 45%;
   }
+
+  /* activités */
 
   #activités {
     margin: 0;
