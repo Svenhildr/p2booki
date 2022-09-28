@@ -203,7 +203,7 @@ h1 {
 }
 
 .marseille {
-  width: 70%;
+  width: 105%;
 }
 
 .marseille .containerCard {
@@ -216,6 +216,7 @@ h1 {
 
 .marseille .containerCard .card {
   width: 30%;
+  min-width: 230px;
   background-color: white;
   border-radius: 25px;
   border: 5px solid white;
@@ -237,7 +238,6 @@ h1 {
 
 .note {
   color: #0065fc;
-  padding-top: 10px;
 }
 
 .grey {
@@ -266,7 +266,7 @@ h1 {
 /************************* Les plus populaires *************************/
 
 .populaire {
-  width: 30%;
+  width: auto;
 }
 
 .populaire .etoilePop {
@@ -299,6 +299,7 @@ h1 {
 
 .populaire .containerCard .card img {
   width: 40%;
+  min-width: 40%;
   object-fit: cover;
   height: 100%;
 }
