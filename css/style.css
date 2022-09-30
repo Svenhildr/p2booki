@@ -430,7 +430,7 @@ li:hover {
 
 /* en tête */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   header {
     display: block;
     text-align: center;
@@ -438,7 +438,7 @@ li:hover {
 
   header #logo {
     text-align: center;
-    padding-left: 30px;
+    padding-left: 5px;
     height: 70px;
     width: 190px;
   }
@@ -464,15 +464,15 @@ li:hover {
   /* titres en tête */
 
   #recherche {
-    margin: 0 30px;
+    margin: 0 30px 0 20px;
   }
 
   h1 {
     font-size: large;
   }
   .enTete {
-    padding: 10px 0px 0px 0px;
-    font-size: small;
+    font-size: medium;
+    font-weight: 300;
   }
 
   /* barre de recherches */
@@ -501,163 +501,10 @@ li:hover {
   /* filtres */
 
   .titreFiltres {
-    padding-right: 70px;
-  }
-
-  /* hébergements */
-
-  #hebergement {
-    margin: 0;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .populaire {
-    background-color: #f2f2f2;
-    border-radius: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .marseille {
-    background-color: white;
-  }
-
-  .marseille,
-  .populaire {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 15px;
-  }
-
-  .marseille .containerCard .card,
-  .populaire .containerCard.card {
-    width: 100%;
-    gap: 20px;
-  }
-
-  /* activités */
-
-  #activités {
-    margin: 0;
-    padding: 10px 30px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  #activités .activites {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .conteneurLarge,
-  .smallMedium {
-    display: flex;
-    width: 100%;
-    gap: 20px;
-  }
-
-  .conteneurLarge {
-    overflow: hidden;
-    border-radius: 25px;
-  }
-
-  .large {
-    height: 220px;
     width: 100%;
   }
 
-  .medium,
-  .small {
-    height: 220px;
-    gap: 20px;
-    position: relative;
-  }
-
-  .contentTitre {
-    padding: 10px 0 10px 30px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    font-size: small;
-  }
-
-  /* footer */
-
-  .listes {
-    padding: 30px 30px;
-    gap: 25px;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-  .aPropos,
-  .nosHebergements,
-  .assistance {
-    width: 100%;
-  }
-}
-
-/* MQ tablette */
-
-/* en tête */
-
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  header {
-    display: block;
-    text-align: center;
-  }
-
-  header #logo {
-    text-align: center;
-    padding-left: 30px;
-    height: 70px;
-    width: 190px;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .liensNav {
-    flex: 2;
-    border-top: 3.5px solid transparent;
-    border-bottom: 3.5px solid #f2f2f2;
-    padding: 10px 40px;
-  }
-
-  .liensNav:hover {
-    border-top: 3.5px solid transparent;
-    border-bottom: 3.5px solid #0065fc;
-  }
-
-  /* titres en tête */
-
-  #recherche {
-    margin: 0 30px;
-  }
-
-  h1 {
-    font-size: x-large;
-  }
-
-  #recherche p {
-    font-size: large;
-  }
-  .enTete {
-    padding: 10px 0px 0px 0px;
-    font-size: small;
-    margin-bottom: 10px;
-  }
-
-  /* hébergements */
+  /* hébergements  */
 
   #hebergement {
     margin: 0;
@@ -739,5 +586,56 @@ li:hover {
     right: 0;
     background-color: white;
     font-size: small;
+  }
+
+  /* footer */
+
+  .listes {
+    padding: 30px 30px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .aPropos,
+  .nosHebergements,
+  .assistance {
+    width: 100%;
+  }
+}
+
+/* MQ mobile uniquement */
+
+/* hébergements */
+
+@media screen and (max-width: 768px) {
+  #hebergement {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .populaire {
+    background-color: #f2f2f2;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .marseille {
+    background-color: white;
+  }
+
+  .marseille,
+  .populaire {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .marseille .containerCard .card,
+  .populaire .containerCard.card {
+    width: 100%;
+    gap: 20px;
   }
 }
