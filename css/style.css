@@ -585,21 +585,6 @@ li:hover {
     background-color: white;
     font-size: small;
   }
-
-  /* footer */
-
-  .listes {
-    padding: 30px 30px;
-    gap: 25px;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-  .aPropos,
-  .nosHebergements,
-  .assistance {
-    width: 100%;
-  }
 }
 
 /* MQ mobile uniquement */
@@ -635,5 +620,20 @@ li:hover {
   .populaire .containerCard.card {
     width: 100%;
     gap: 20px;
+  }
+
+  /* footer */
+
+  .listes {
+    padding: 30px 30px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .aPropos,
+  .nosHebergements,
+  .assistance {
+    width: 100%;
   }
 }
