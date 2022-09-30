@@ -4,16 +4,9 @@ body {
 
 main {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
 }
-
-/* header,
-#recherche,
-#hebergement,
-#activités {
-  margin: 0px 15px;
-} */
 
 * {
   margin: 0;
@@ -33,7 +26,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0px;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -400,15 +393,14 @@ h1 {
 footer {
   margin-top: 60px;
   background-color: #f2f2f2;
-  max-width: 1400px;
-  margin: auto;
 }
 
 .listes {
   padding: 30px 50px;
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 .aPropos,
 .nosHebergements,
